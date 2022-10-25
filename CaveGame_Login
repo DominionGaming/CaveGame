@@ -1,0 +1,7 @@
+import pickle
+def funca():
+    myName = input("Enter your name")
+    with open("caveuser1.pickle","wb") as f:
+        pickle.dump( myName, f)
+funca()
+
