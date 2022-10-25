@@ -1,0 +1,57 @@
+#CAVEGAME
+#Import
+import random
+import pickle
+#Introduction
+print("--------CaveGame V.3.2----------")
+print("Updates:")
+print(" V.3.0 updates - Introduced updates and title scene and credits. Also introduced random mod.")
+print("V.3.1 updates - Debugged main software. Also fixed if statement problem with random mod. And added seperate nodes.")
+print("V.3.2 updates - Added part 4 and part 5")
+print("Credits - Rhys")
+print('Hello! What is your name?')
+myName = input("Enter your name")
+#PART1
+print("Well", myName, "you are travelling down a cave and come to a fork in the cave. There are two paths - which do you choose?")
+guess = int(input("Make a guess"))
+tnl1 = random.randint(1,2)
+if guess == tnl1:
+        print('You survived')
+#PART2
+        print("Well", myName, "you are travelling down a cave and come to another fork in the cave. There are two paths - which do you choose?")
+        guess2 = int(input("Make a guess"))
+        tnl2 = random.randint(1,2)
+        if guess2 == tnl2:
+         print('You survived')
+#PART3
+         print("Well", myName, "you are travelling down a cave and come to another fork in the cave. This time there are three paths - which do you choose?")
+         guess3 = int(input("Make a guess"))
+         tnl3 = random.randint(1,3)
+         if guess3 == tnl3:
+          print('You survived')
+#PART4
+          print("Well", myName, "you are travelling down a cave and come to another fork in the cave. This time there are three paths - which do you choose?")
+          guess4 = int(input("Make a guess"))
+          tnl4 = random.randint(1,3)
+          if guess4 == tnl4:
+           print('You survived')
+#PART5
+           print("Well", myName, "you are travelling down a cave and come to another fork in the cave. This time there are three paths - which do you choose?")
+           guess5 = int(input("Make a guess"))
+           tnl5 = random.randint(1,3)
+           if guess5 == tnl5:
+             print('You survived')
+
+
+           else:
+            print("You died. Game over")
+          else:
+           print("You died. Game over")
+         else:
+          print("You died. Game over")
+        else:
+         print("You died. Game over.")
+        
+  
+else:
+ print("You died. Game over.")
